@@ -1,3 +1,3 @@
-# kuis_124240051
+# Quis_124240051
 
-A new Flutter project.
+Septo Danu Ayman (124240051)

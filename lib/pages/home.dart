@@ -15,11 +15,12 @@ class _CulinaryListPageState extends State<CulinaryListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Culinarizz"),
+        title: const Text("Culinarizz", style: TextStyle(color: Colors.deepPurple),),
         actions: [
           IconButton(
             icon: Icon(
-              Icons.exit_to_app,
+              Icons.exit_to_app, 
+              color: Colors.red,
             ),
             onPressed: () {
               Navigator.pushReplacement(
