@@ -57,13 +57,21 @@ class _CulinaryDetailPageState extends State<CulinaryDetailPage> {
                     ],
                   ),
                   const SizedBox(height: 16),
-                  Chip(label: Text(widget.culinary.category, style: const TextStyle(color: Colors.white)), backgroundColor: const Color.fromARGB(255, 26, 117, 190)),
+                  Row(
+                    children: [
+                      Chip(label: Text(widget.culinary.category, style: const TextStyle(color: Colors.white)), backgroundColor: const Color.fromARGB(255, 26, 117, 190)),
+                      const SizedBox(height: 8),
+                      Chip(label: Text(widget.culinary.mainIngredient, style: const TextStyle(color: Colors.white)), backgroundColor: const Color.fromARGB(255, 196, 119, 3)),
+                    ],
+                  ),
                   const SizedBox(height: 8),
-                  Chip(label: Text(widget.culinary.mainIngredient, style: const TextStyle(color: Colors.white)), backgroundColor: const Color.fromARGB(255, 196, 119, 3)),
-                  const SizedBox(height: 8),
-                  Chip(label: Text(widget.culinary.flavor, style: const TextStyle(color: Colors.white)), backgroundColor: const Color.fromARGB(255, 221, 19, 80)),
-                  const SizedBox(height: 8),
-                  Chip(label: Text(widget.culinary.spicyLevel, style: const TextStyle(color: Colors.white)), backgroundColor: const Color.fromARGB(255, 76, 173, 78)),
+                  Row(
+                    children: [
+                      Chip(label: Text(widget.culinary.flavor, style: const TextStyle(color: Colors.white)), backgroundColor: const Color.fromARGB(255, 221, 19, 80)),
+                      const SizedBox(height: 8),
+                      Chip(label: Text(widget.culinary.spicyLevel, style: const TextStyle(color: Colors.white)), backgroundColor: const Color.fromARGB(255, 76, 173, 78)),
+                    ],
+                  ),
                   const SizedBox(height: 16),
                   Row(
                     children: [
